@@ -19,8 +19,8 @@ Ensure you have the following tools installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/fahmiaksan/PT-SATU-MEDIS.git
-   cd PT-SATU-MEDIS
+   git clone https://github.com/fahmiaksan/laravel-api.git
+   cd laravel-api
    ```
 2. **Install dependencies**:
    ```bash
@@ -30,32 +30,22 @@ Ensure you have the following tools installed:
    ```bash
    cp .env.example .env
    ```
-3. **Generate the application key**:
-   ```bash
-   php artisan key:generate
-   ```
 
 4. **Generate the application key**:
    ```bash
    php artisan key:generate
    ```
-4. **Install JWT**:
+
+5. **Generate storage link**:
    ```bash
-   composer require tymon/jwt-auth
+   php artisan storage:link
    ```
-   5. **Publish the JWT configuration**:
-   ```bash
-    php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
-   ```
-6. **Generate JWT secret**:
-   ```bash
-   php artisan jwt:secret
-   ```
+
 6. **Run migration**:
    ```bash
     php artisan migrate
    ```
-6. **Run seeder**:
+7. **Run seeder**:
    ```bash
     php artisan db:seed
    ```
@@ -64,11 +54,4 @@ Ensure you have the following tools installed:
 1. **Start the local development server**:
    ```bash
    php artisan serve
-   ```
-
-
-   
-2. **Access the project: Open your postman and navigate to**:
-   ```bash
-   http://localhost:8000/yourRequestUrl
    ```
